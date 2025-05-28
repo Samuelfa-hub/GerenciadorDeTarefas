@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#AddTaskArea label,
+#AddTaskArea input,
+#AddTaskArea button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#AddTaskArea input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+#AddTaskButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#AddTaskButton:hover {
+    background-color: #0056b3;
+}
+
+#TaskList {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#TaskList li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#TaskList li:last-child {
+    border-bottom: none;
+}
+
+.TaskText {
+    flex-grow: 1;
+}
+
+.CompleteButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.CompleteButton:hover {
+    background-color: #1e7e34;
+}
+
+.Completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
+#ProgressArea {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+#ProgressPercentage {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
